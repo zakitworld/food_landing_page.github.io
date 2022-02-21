@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Landing page</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="all.css" />
+    <link rel="stylesheet" href="Responsive.css" />
+    <script src="jquery-3.6.0.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome</h1>
+            <h2>We hope you like delicious food. That's what we make here.</h2>
+            <a class="btn" href="">Order Now</a>
+            <div class="submenu">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+            </div>
+        </div>
+    </header>
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <img src="dish-1.png" alt="" />
+                <p>Hamburger, double patty</p>
+            </div>
+            <div class="feature">
+                <img src="dish-3.png" alt="" />
+                <p>Grilled Whole Chicken</p>
+            </div>
+
+            <div class="feature">
+                <img src="dish-1.png" alt="" />
+                <p>Hamburger, double patty</p>
+            </div>
+        </div>
+    </section>
+    <section class="quote">
+        <blockquote class="container">
+            <p>"What a delicious meal!"</p>
+            <cite>Leila Ramdy</cite>
+        </blockquote>
+    </section>
+    <section class="form">
+        <h2 class="display-6">Join our mailing list</h2>
+        <p>Sign up to hear about all our special offers!</p>
+
+        <form name="CustomerInfo">
+            <div class="container bg-opacity-50 p-3">
+                <div class="row">
+                    <div class="col-4">
+                        <label for="FirstName">First Name</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" id="FirstName" required />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <label for="LastName">Last Name</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" id="LastName" required />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <label for="Phone">Phone</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="tel" id="Phone" required />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <label for="Birthday">Birthday</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="date" id="Birthday" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <label for="E-mail">E-mail Address</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="email" id="E-mail" />
+                    </div>
+                </div>
+                <div class="text-center">
+                    <input class="btn btn-primary" type="submit" />
+                </div>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+            <p>&copy; All rights reserved. zakitworld</p>
+        </div>
+    </footer>
+    <script>
+        $(function() {
+            $(".btn").click(function() {
+                $(".submenu").slideToggle(500);
+            });
+        });
+    </script>
+</body>
+
+</html>
